@@ -1,15 +1,23 @@
-import React from 'react';
-import ReactDOM from 'react-dom';
+import React, { useState } from 'react';
+import { render } from 'react-dom';
+import { DatePicker, message } from 'antd';
+import 'antd/dist/antd.css';
 import './index.css';
-import App from './App';
-import * as serviceWorker from './serviceWorker';
 
-ReactDOM.render(
-  <React.StrictMode>
-    <App />
-  </React.StrictMode>,
-  document.getElementById('root')
-);
+const App = () => {
+  const [date, setDate] = useState(null);
+  const handleChange = value => {
+    message.info(`Selected Date: ${value ? value.format('YYYY-MM-DD') : 'None'}`);
+    setDate(value);
+  };
+  return (
+    <div style={{ width: 400, margin: '100px auto' }}>
+      <DatePicker onChange={handleChange} />
+      <div style={{ marginTop: 16 }}>
+        Selected Date: {date ? date.format('YYYY-MM-DD') : 'None'}
+      </div>
+    </div>
+  );
+};
 
-
-serviceWorker.unregister();
+render(<App />, document.getElementById('root'));
