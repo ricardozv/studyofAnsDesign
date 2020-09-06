@@ -1,18 +1,12 @@
-import React, { useState } from 'react';
-import { render } from 'react-dom';
-import { DatePicker, message, Alert } from 'antd';
-import 'antd/dist/antd.css';
+import React from 'react';
+import ReactDOM from 'react-dom';
 import './index.css';
-import {Button} from 'antd';
+import App from './App';
+import * as serviceWorker from './serviceWorker';
 
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <Button>Fala!</Button>
-      </header>
-    </div>
-  )
-}
-
-render(<App />, document.getElementById('root'));
+ReactDOM.render(
+  <React.StrictMode>
+    <App />
+  </React.StrictMode>,
+  document.getElementById('root')
+);
