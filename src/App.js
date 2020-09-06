@@ -1,17 +1,19 @@
 import React from 'react';
-import {Button} from 'antd';
 import './App.css';
-
+import { Row, Col } from 'antd';
 import { Layout, Menu, Breadcrumb } from 'antd';
-import { UserOutlined, LaptopOutlined, NotificationOutlined } from '@ant-design/icons';
+
 
 const { SubMenu } = Menu;
-const { Header, Content, Sider } = Layout;
+
+
+const { Header, Footer, Sider, Content } = Layout;
 
 
 function App() {
   return (
     <div className="App"> 
+    /*Início de criação do header */
     <Header className="header">
       <Menu theme="dark" mode="horizontal" defaultSelectedKeys={['2']}>
         <Menu.Item key="1">Taxonomies</Menu.Item>
@@ -19,6 +21,28 @@ function App() {
         <Menu.Item key="3">Documentation</Menu.Item>
       </Menu>
     </Header>
+        <>
+        <Layout>
+
+      <Content>Content</Content>
+    </Layout>
+
+  
+    <Layout>
+      
+      <Layout>
+        <Content>Content</Content>
+        
+      </Layout>
+
+        <Content>Content</Content>
+        <Footer>Footer</Footer>
+      </Layout>
+
+
+
+
+        </>
     </div>
     
   );
