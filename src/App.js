@@ -26,15 +26,10 @@ function App() {
 
       <Content>Content</Content>
     </Layout>
-
-  
     <Layout>
-      
       <Layout>
         <Content>Content</Content>
-        
       </Layout>
-
         <Content>Content</Content>
         <Footer>Footer</Footer>
       </Layout>
