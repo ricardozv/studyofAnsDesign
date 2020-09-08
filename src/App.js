@@ -1,11 +1,13 @@
 // import api from './services/api';
 
-import { Divider } from 'antd';
+import { Divider, Space, AutoComplete } from 'antd';
 import React from 'react';
 import { Button } from 'antd';
 import { SearchOutlined } from '@ant-design/icons';
 import { Layout, Menu} from 'antd';
 import './global.css';
+import { Card } from 'antd';
+
 
 const { Header, Footer, Content } = Layout;
 
@@ -15,130 +17,95 @@ function App() {
     <Header className="header">
       <Menu theme="dark" mode="horizontal" defaultSelectedKeys={['1']}>
       <Divider type="vertical" />
+        <Space>
         <Button type= "primary">Taxonomies</Button>
-        <Divider type="vertical" />
         <Button type="primary">Api</Button>
-        <Divider type="vertical" />
         <Button type="primary">Documentasion</Button>
-        
         <Divider type="vertical" />
-        <Button type="primary">Primary Button</Button>
-        <Divider type="vertical" />
-        <Button>Default Button</Button>
-        <Divider type="vertical" />
-        <Button type="dashed">Dashed Button</Button>
-        
+        </Space>
 
+        <Space>
         <Divider type="vertical" />
         <Button type="primary" icon={<SearchOutlined />}>
           Search
         </Button>
         <Divider type="vertical" />
         <Button href="#">Clear</Button>
-      
+        </Space>
 
     
       </Menu>
     </Header>
        
         <>
+        <Card style={
+          { 
+            width: 1200,
+            padding: 1
+          
+          }}>
+           <p>Card content</p>
+        </Card>
+        <Card style={
+          { 
+            width: 1200,
+            padding: 2
+          
+          }}>
+            <p>Card content</p>
+        </Card>
+        <Card style={
+          { 
+            width: 1200,
+            padding: 2
+          
+          }}>
+            <p>Card content</p>
+        </Card>
+        <Card style={
+          { 
+            width: 1200,
+            padding: 2
+          
+          }}>
+            <p>Card content</p>
+        </Card>
+        <Card style={
+          { 
+            width: 1200,
+            padding: 2
+          
+          }}>
+            <p>Card content</p>
+        </Card>
+        <Card style={
+          { 
+            width: 1200,
+            padding: 2
+          
+          }}>
+            <p>Card content</p>
+        </Card>
+
+        <Card style={
+          { 
+            width: 1200,
+            padding: 2
+          
+          }}>
+            <p>Card content</p>
+        </Card>
         <Layout>
-            <Content>Content</Content>
+              <Footer style={{
+                width: 1200,
+                padding: 2
+
+              }}>Footer</Footer>
         </Layout>
 
-            <Layout>
-                <Content>Content</Content>
-            </Layout>
 
-                <Layout>
-                  <Content>Content</Content>
-                </Layout>
-
-                    <Layout>
-                      <Content>Content</Content>
-                    </Layout>
-
-                        <Layout>
-                            <Content>Content</Content>
-                        </Layout>
-
-                            <Layout>
-                              <Content>Content</Content>
-                            </Layout>
-
-                                <Layout>
-                                  <Content>Content</Content>
-                                </Layout>
-
-                                    <Layout>
-                                        <Content>Content</Content>
-                                    </Layout>
-
-                                        <Layout>
-                                          <Content>Content</Content>
-                                        </Layout>
-
-                                            <Layout>
-                                              <Content>Content</Content>
-                                            </Layout>
-
-                                              <Layout>
-                                                  <Content>Content</Content>
-                                              </Layout>
-                                              
-                                                  <Layout>
-                                                    <Content>Content</Content>
-                                                  </Layout>
-
-                                                       <Layout>
-                                                          <Content>Content</Content>
-                                                       </Layout>
-
-                                                  <Layout>
-                                                    <Content>Content</Content>
-                                                </Layout>
-
-                                            <Layout>
-                                              <Content>Content</Content>
-                                            </Layout>
-
-                                        <Layout>
-                                        <Content>Content</Content>
-                                     </Layout>
-
-                                <Layout>
-                                    <Content>Content</Content>
-                                </Layout>
-                                
-                                    <Layout>
-                                      <Content>Content</Content>
-                                    </Layout>
-
-                                       <Layout>
-                                          <Content>Content</Content>
-                                      </Layout>
-
-                                    <Layout>
-                                        <Content>Content</Content>
-                                    </Layout>
-
-                                <Layout>
-                                  <Content>Content</Content>
-                                </Layout>
-
-                          <Layout>
-                              <Content>Content</Content>
-                           </Layout>
-
-                      <Layout>
-                          <Content>Content</Content>
-                      </Layout>
-            
-                <Layout>
-                  <Content>Content</Content>
-                </Layout>
-
-              <Footer>Footer</Footer>
+       
+       
         </>
 
     </div>
