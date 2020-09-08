@@ -8,7 +8,7 @@ import { Layout, Menu} from 'antd';
 import './global.css';
 import { Card } from 'antd';
 
-
+// Verficar o reproveitamento das folhas de stylo dos cartões.
 const { Header, Footer, Content } = Layout;
 
 function App() {
@@ -35,9 +35,12 @@ function App() {
 
     
       </Menu>
+      
     </Header>
        
         <>
+
+        
         <Card style={
           { 
             width: 1200,
