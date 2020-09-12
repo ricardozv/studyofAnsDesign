@@ -9,6 +9,10 @@ import { Button } from 'antd';
 import { SearchOutlined } from '@ant-design/icons';
 import { Layout} from 'antd';
 
+
+
+import { useState } from 'react';
+
 // import { PoweroffOutlined } from '@ant-design/icons';
 import './global.css';
 
@@ -29,12 +33,15 @@ const { Header, Footer } = Layout;
 
 function App() {
  // const { loadings } = this.state; colocar reload nos butões 
+ const [size] = useState(8);
   return (
     <div className="App"> 
     <Header className="header">
       <Menu theme="dark" mode="horizontal" defaultSelectedKeys={['100']}>
       <Divider type="vertical"/>
-        <Space>
+
+      
+        <Space size={size}>
        
         <Button theme= "dark">Taxonomies</Button>
         <Button theme="dark">Api</Button>
@@ -62,43 +69,35 @@ function App() {
     </Header>
        
         <>
-        <Row>
+        <Row gutter={[16, 16]}>
           <Col span={6}>col-6</Col>
           <Col span={6}>col-6</Col>
           <Col span={6}>col-6</Col>
           <Col span={6}>col-6</Col>
         </Row>
 
-        <Row>
+        <Row gutter={[16, 16]}>
           <Col span={6}>col-6</Col>
           <Col span={6}>col-6</Col>
           <Col span={6}>col-6</Col>
           <Col span={6}>col-6</Col>
         </Row>
 
-        <Row>
+        <Row gutter={[16, 16]}>
           <Col span={6}>col-6</Col>
           <Col span={6}>col-6</Col>
           <Col span={6}>col-6</Col>
           <Col span={6}>col-6</Col>
         </Row>
 
-        <Row>
+        <Row gutter={[16, 16]}>
           <Col span={6}>col-6</Col>
           <Col span={6}>col-6</Col>
           <Col span={6}>col-6</Col>
           <Col span={6}>col-6</Col>
         </Row>
 
-        <Row>
-          <Col span={6}>col-6</Col>
-          <Col span={6}>col-6</Col>
-          <Col span={6}>col-6</Col>
-          <Col span={6}>col-6</Col>
-        </Row>
-
-
-        <Row>
+        <Row gutter={[16, 16]}>
           <Col span={6}>col-6</Col>
           <Col span={6}>col-6</Col>
           <Col span={6}>col-6</Col>
@@ -106,42 +105,7 @@ function App() {
         </Row>
 
 
-        <Row>
-          <Col span={6}>col-6</Col>
-          <Col span={6}>col-6</Col>
-          <Col span={6}>col-6</Col>
-          <Col span={6}>col-6</Col>
-        </Row>
-
-        <Row>
-          <Col span={6}>col-6</Col>
-          <Col span={6}>col-6</Col>
-          <Col span={6}>col-6</Col>
-          <Col span={6}>col-6</Col>
-        </Row>
-
-        <Row>
-          <Col span={6}>col-6</Col>
-          <Col span={6}>col-6</Col>
-          <Col span={6}>col-6</Col>
-          <Col span={6}>col-6</Col>
-        </Row>
-
-        <Row>
-          <Col span={6}>col-6</Col>
-          <Col span={6}>col-6</Col>
-          <Col span={6}>col-6</Col>
-          <Col span={6}>col-6</Col>
-        </Row>
-
-        <Row>
-          <Col span={6}>col-6</Col>
-          <Col span={6}>col-6</Col>
-          <Col span={6}>col-6</Col>
-          <Col span={6}>col-6</Col>
-        </Row>
-
-        <Row>
+        <Row gutter={[16, 16]}>
           <Col span={6}>col-6</Col>
           <Col span={6}>col-6</Col>
           <Col span={6}>col-6</Col>
@@ -149,7 +113,42 @@ function App() {
         </Row>
 
 
-        <Row>
+        <Row gutter={[16, 16]}>
+          <Col span={6}>col-6</Col>
+          <Col span={6}>col-6</Col>
+          <Col span={6}>col-6</Col>
+          <Col span={6}>col-6</Col>
+        </Row>
+
+        <Row gutter={[16, 16]}>
+          <Col span={6}>col-6</Col>
+          <Col span={6}>col-6</Col>
+          <Col span={6}>col-6</Col>
+          <Col span={6}>col-6</Col>
+        </Row>
+
+        <Row gutter={[16, 16]}>
+          <Col span={6}>col-6</Col>
+          <Col span={6}>col-6</Col>
+          <Col span={6}>col-6</Col>
+          <Col span={6}>col-6</Col>
+        </Row>
+
+        <Row gutter={[16, 16]}>
+          <Col span={6}>col-6</Col>
+          <Col span={6}>col-6</Col>
+          <Col span={6}>col-6</Col>
+          <Col span={6}>col-6</Col>
+        </Row>
+
+        <Row gutter={[16, 16]}>
+          <Col span={6}>col-6</Col>
+          <Col span={6}>col-6</Col>
+          <Col span={6}>col-6</Col>
+          <Col span={6}>col-6</Col>
+        </Row>
+
+        <Row gutter={[16, 16]}>
           <Col span={6}>col-6</Col>
           <Col span={6}>col-6</Col>
           <Col span={6}>col-6</Col>
@@ -157,42 +156,7 @@ function App() {
         </Row>
 
 
-        <Row>
-          <Col span={6}>col-6</Col>
-          <Col span={6}>col-6</Col>
-          <Col span={6}>col-6</Col>
-          <Col span={6}>col-6</Col>
-        </Row>
-
-        <Row>
-          <Col span={6}>col-6</Col>
-          <Col span={6}>col-6</Col>
-          <Col span={6}>col-6</Col>
-          <Col span={6}>col-6</Col>
-        </Row>
-
-        <Row>
-          <Col span={6}>col-6</Col>
-          <Col span={6}>col-6</Col>
-          <Col span={6}>col-6</Col>
-          <Col span={6}>col-6</Col>
-        </Row>
-
-        <Row>
-          <Col span={6}>col-6</Col>
-          <Col span={6}>col-6</Col>
-          <Col span={6}>col-6</Col>
-          <Col span={6}>col-6</Col>
-        </Row>
-
-        <Row>
-          <Col span={6}>col-6</Col>
-          <Col span={6}>col-6</Col>
-          <Col span={6}>col-6</Col>
-          <Col span={6}>col-6</Col>
-        </Row>
-
-        <Row>
+        <Row gutter={[16, 16]}>
           <Col span={6}>col-6</Col>
           <Col span={6}>col-6</Col>
           <Col span={6}>col-6</Col>
@@ -200,48 +164,28 @@ function App() {
         </Row>
 
 
-        <Row>
+        <Row gutter={[16, 16]}>
           <Col span={6}>col-6</Col>
           <Col span={6}>col-6</Col>
           <Col span={6}>col-6</Col>
           <Col span={6}>col-6</Col>
         </Row>
 
-
-        <Row>
+        <Row gutter={[16, 16]}>
           <Col span={6}>col-6</Col>
           <Col span={6}>col-6</Col>
           <Col span={6}>col-6</Col>
           <Col span={6}>col-6</Col>
         </Row>
 
-        <Row>
+        <Row gutter={[16, 16]}>
           <Col span={6}>col-6</Col>
           <Col span={6}>col-6</Col>
           <Col span={6}>col-6</Col>
           <Col span={6}>col-6</Col>
         </Row>
 
-        <Row>
-          <Col span={6}>col-6</Col>
-          <Col span={6}>col-6</Col>
-          <Col span={6}>col-6</Col>
-          <Col span={6}>col-6</Col>
-        </Row>
-
-        <Row>
-          <Col span={6}>col-6</Col>
-          <Col span={6}>col-6</Col>
-          <Col span={6}>col-6</Col>
-          <Col span={6}>col-6</Col>
-        </Row>
-
-        <Row>
-          <Col span={6}>col-6</Col>
-          <Col span={6}>col-6</Col>
-          <Col span={6}>col-6</Col>
-          <Col span={6}>col-6</Col>
-        </Row>
+     
 
         <Layout>
               <Footer style={{
