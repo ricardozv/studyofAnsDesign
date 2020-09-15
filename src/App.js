@@ -1,60 +1,46 @@
 // import api from './services/api';
-import { Menu } from 'antd';
 import './components/buttons/ButtonPrimary';
 import { Row, Col } from 'antd';
 
 import { PageHeader, Button } from 'antd';
 
-// import que foram copiados pro componente 
-// import { Divider, Space } from 'antd';
 import React from 'react';
-// import { Button } from 'antd';
-// import { SearchOutlined } from '@ant-design/icons';
 import { Layout} from 'antd';
 
 
 import { Tag } from 'antd';
-
-
-//import { useState } from 'react';
-
-// import { PoweroffOutlined } from '@ant-design/icons';
 import './global.css';
 
 
-const { Footer } = Layout;
 
-
-
-
-
+const { Footer, Content } = Layout;
 
 
 function App() {
- // const [size] = useState(8);
+
   return (
     <div style={{ width: 1200, margin: '40px auto' }}>
        <div className="site-page-header-ghost-wrapper">
-    <PageHeader
+    <PageHeader style={{ 
+       background: '#0000FF',
+       width: 1200,
+       padding: 20
+
+    }}
       ghost={true}
       onBack={() => window.history.back()}
       title="Back"
       subTitle="This is a subtitle"
-    
-
-
       extra={[
         <Button theme= "dark">any rank</Button>,
         <Button theme="dark">all divisions</Button>,
         <Button key="3">Search</Button>,
         <Button key="2">Search</Button>,
-        <Button key="1" type="primary">,
+        <Button key="1" type="primary">
           Clear
         </Button>,
         <>
-      
           <Tag color="#f50">#f50</Tag>
-        
 
         </>
       ]}
@@ -65,6 +51,22 @@ function App() {
    
     
       <>
+
+      <Content style={{ margin: '10px 50px 10px 6px', background:'#0000FF' }}>
+            <div className="site-layout-background" style={{ padding: 20, minHeight: 50 }}>
+              Bill is a cat.
+            kkkkkkkkkk
+            </div>
+          </Content>
+
+          <Content style={{ margin: '10px 50px 10px 6px', background:'#0000FF' }}>
+            <div className="site-layout-background" style={{ padding: 20, minHeight: 50 }}>
+              Bill is a cat.
+            kkkkkkkkkk
+            </div>
+          </Content>
+
+
         <Row gutter={[16, 16 ]}>
           <Col span={6}>col-6</Col>
           <Col span={6}>col-6</Col>
@@ -185,10 +187,11 @@ function App() {
 
         <Layout>
               <Footer style={{
+                background: '#0000FF',
                 width: 1200,
-                padding: 2
-
-              }}>Footer</Footer>
+                padding: 8
+              }}>
+                Footer</Footer>
         </Layout>
 
 
