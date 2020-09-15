@@ -1,6 +1,6 @@
 // import api from './services/api';
 import './components/buttons/ButtonPrimary';
-import { Row, Col } from 'antd';
+import { Row} from 'antd';
 
 import { PageHeader, Button } from 'antd';
 
@@ -10,6 +10,7 @@ import { Layout} from 'antd';
 
 import { Tag } from 'antd';
 import './global.css';
+
 
 
 
@@ -74,11 +75,16 @@ function App() {
           <Col span={6}>col-6</Col>
         </Row>
 
-        <Row gutter={[16, 16]}>
-          <Col span={6}>col-6</Col>
-          <Col span={6}>col-6</Col>
-          <Col span={6}>col-6</Col>
-          <Col span={6}>col-6</Col>
+        <Row>
+          <Col style={{ 
+            background:'#0000FF',
+            margin: '10px 50px 10px 6px',
+            padding: 20, 
+            minHeight: 50
+        
+        
+        }} span={6}>col-6</Col>
+         
         </Row>
 
         <Row gutter={[16, 16]}>
