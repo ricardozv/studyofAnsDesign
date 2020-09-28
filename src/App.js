@@ -5,6 +5,7 @@ import React from 'react';
 import { Layout} from 'antd';
 import './global.css';
 import { Select } from 'antd';
+import { Row, Col } from 'antd';
 
 const { Option } = Select;
 const { Footer, Content } = Layout;
@@ -34,14 +35,26 @@ function App() {
 
             <Select defaultValue="any rank" style={{ width: 120 }} onChange={handleChange}>
                 <Option value="jack">any rank</Option>
-                  <Option value="lucy">Lucy</Option>
-              <Option value="Yiminghe">yiminghe</Option>
+                <Option value="lucy">Lucy</Option>
+                <Option value="Yiminghe">yiminghe</Option>
+                <Option value="jack">any rank</Option>
+                <Option value="lucy">Lucy</Option>
+                <Option value="Yiminghe">yiminghe</Option>
+                <Option value="jack">any rank</Option>
+                <Option value="lucy">Lucy</Option>
+                <Option value="Yiminghe">yiminghe</Option>
+                <Option value="jack">any rank</Option>
+                <Option value="lucy">Lucy</Option>
+                <Option value="Yiminghe">yiminghe</Option>
             </Select>
 
             <Select defaultValue="all divisions" style={{ width: 120 }} onChange={handleChange}>
                 <Option value="jack">any rank</Option>
-                  <Option value="lucy">Lucy</Option>
-              <Option value="Yiminghe">yiminghe</Option>
+                <Option value="lucy">Lucy</Option>
+                <Option value="Yiminghe">yiminghe</Option>
+                <Option value="jack">any rank</Option>
+                <Option value="lucy">Lucy</Option>
+                <Option value="Yiminghe">yiminghe</Option>
             </Select>  
         
                <Button key="2">Search</Button>,
@@ -126,11 +139,25 @@ function App() {
 
         <Layout>
               <Footer style={{
-                background: '#0000FF',
+                background: '#00ff',
                 width: 1200,
                 padding: 20
               }}>
-                Footer</Footer>
+               <Row>
+                <Col span={2}>col-6</Col>
+                <Col span={2}>col-6</Col>
+                <Col span={2}>col-6</Col>
+                <Col span={2}>col-6</Col>
+                <Col span={2}>col-6</Col>
+                <Col span={2}>col-6</Col>
+                <Col span={2}>col-6</Col>
+                <Col span={2}>col-6</Col>
+                <Col span={2}>col-6</Col>
+                <Col span={2}>col-6</Col>
+                <Col span={2}>col-6</Col>
+              </Row>
+              </Footer>
+                
         </Layout>
        
     </>,
